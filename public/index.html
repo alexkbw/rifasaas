@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="RifaSaas ajuda vendedores a criarem campanhas, venderem cotas e acompanharem pagamentos em uma loja organizada."
+      content="RifaSaas ajuda vendedores a criarem uma loja de rifas bonita, venderem cotas com clareza e acompanharem toda a opera&ccedil;&atilde;o em um painel organizado."
     />
-    <title>RifaSaas</title>
+    <title>RifaSaas | Loja profissional para rifas</title>
     <link rel="icon" href="logoRifassas.ico" />
+    <link rel="preload" as="image" href="hero-rifasaas.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,215 +23,239 @@
         <nav class="main-nav" aria-label="Navegacao principal">
           <a href="#recursos">Recursos</a>
           <a href="#como-funciona">Como funciona</a>
-          <a href="#sobre-rifas">Sobre rifas</a>
+          <a href="#seguranca">Confian&ccedil;a</a>
         </nav>
 
         <div class="header-actions">
           <a class="button ghost" href="/api/entrar">Entrar</a>
           <a class="button primary" href="/api/entrar?next=/cadastro-vendedor">
             Criar minha loja
-            <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <h1>Sua operação de rifas mais <span>profissional e organizada.</span></h1>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <p class="hero-eyebrow">Loja, cotas, pagamentos e sorteios em um s&oacute; lugar</p>
+          <h1 id="hero-title">RifaSaas</h1>
+          <p class="hero-lede">
+            Transforme sua venda de rifas em uma experi&ecirc;ncia mais bonita, organizada e confi&aacute;vel para quem compra e
+            para quem vende.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button hero-button" href="/api/entrar?next=/cadastro-vendedor">Criar minha loja</a>
+            <a class="button hero-link" href="#recursos">Ver recursos</a>
+          </div>
+
+          <dl class="hero-metrics" aria-label="Destaques da plataforma">
+            <div>
+              <dt>Vitrine</dt>
+              <dd>com sua marca</dd>
+            </div>
+            <div>
+              <dt>Cotas</dt>
+              <dd>organizadas</dd>
+            </div>
+            <div>
+              <dt>Pix</dt>
+              <dd>mais f&aacute;cil de acompanhar</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Resumo da plataforma">
+        <div class="container proof-grid">
+          <article>
+            <span aria-hidden="true">01</span>
+            <strong>P&aacute;gina p&uacute;blica pronta</strong>
+            <p>Mostre pr&ecirc;mio, regras, cotas e chamadas de compra com uma apresenta&ccedil;&atilde;o mais profissional.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <strong>Painel de controle</strong>
+            <p>Acompanhe campanhas, reservas, pagamentos e participantes sem depender de planilhas soltas.</p>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <strong>Jornada mais clara</strong>
+            <p>O cliente entende o que est&aacute; comprando, como pagar e onde conferir suas cotas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="recursos" class="section showcase">
+        <div class="container showcase-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Feito para vender melhor</p>
+            <h2>Uma estrutura completa para sua rifa parecer grande desde o primeiro acesso.</h2>
             <p>
-              Crie campanhas, venda cotas e acompanhe sua operação em uma plataforma feita para fortalecer sua marca e
-              facilitar a experiência dos seus clientes.
+              A plataforma ajuda voc&ecirc; a montar campanhas, organizar compradores e manter cada informa&ccedil;&atilde;o importante no
+              lugar certo. Menos improviso, mais clareza e mais confian&ccedil;a para divulgar.
             </p>
 
-            <div class="hero-checks">
-              <div><strong>✓</strong> Painel simples para acompanhar toda a operação</div>
-              <div><strong>✓</strong> Loja pública pronta para receber seus clientes</div>
-              <div><strong>✓</strong> Informações centralizadas do início ao sorteio</div>
-            </div>
+            <ul class="check-list">
+              <li>Loja com identidade pr&oacute;pria para fortalecer sua marca.</li>
+              <li>Campanhas com imagem, descri&ccedil;&atilde;o, quantidade e valor de cotas.</li>
+              <li>Hist&oacute;rico de reservas, pagamentos e participantes por campanha.</li>
+            </ul>
           </div>
 
-          <div class="dashboard-preview" aria-label="Previa do painel RifaSaas">
-            <div class="preview-header">
-              <div class="preview-title">
-                <span class="preview-icon">▦</span>
-                <div>
-                  <strong>Visão da sua operação</strong>
-                  <small>Tudo importante em um só lugar</small>
+          <div class="product-stage" aria-label="Previa visual do painel RifaSaas">
+            <div class="mockup-window">
+              <div class="mockup-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mockup-body">
+                <aside>
+                  <b></b>
+                  <b></b>
+                  <b></b>
+                  <b></b>
+                </aside>
+                <div class="mockup-content">
+                  <div class="mockup-kpis">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="mockup-chart">
+                    <i></i>
+                  </div>
+                  <div class="mockup-bottom">
+                    <span></span>
+                    <span></span>
+                  </div>
                 </div>
               </div>
-              <span class="status-pill">Campanha ativa</span>
             </div>
-
-            <div class="campaign-panel">
-              <div>
-                <small>Prêmio especial</small>
-                <strong>Sua campanha em destaque</strong>
-              </div>
-              <span class="gift-icon">★</span>
-            </div>
-
-            <div class="progress-row">
-              <span>Progresso das cotas</span>
+            <div class="floating-note">
               <strong>68%</strong>
-            </div>
-            <div class="progress-track"><span style="width: 68%"></span></div>
-
-            <div class="metric-grid">
-              <div>
-                <small>Cotas</small>
-                <strong>Organizadas</strong>
-              </div>
-              <div>
-                <small>Pagamentos</small>
-                <strong>Acompanhados</strong>
-              </div>
-              <div>
-                <small>Sorteios</small>
-                <strong>Registrados</strong>
-              </div>
+              <span>cotas em andamento</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="feature-strip">
-        <div class="container strip-grid">
-          <article>
-            <span>▣</span>
-            <div>
-              <h2>Sua própria vitrine</h2>
-              <p>Uma loja pronta para divulgar campanhas.</p>
-            </div>
-          </article>
-          <article>
-            <span>▤</span>
-            <div>
-              <h2>Gestão centralizada</h2>
-              <p>Visibilidade para tomar decisões melhores.</p>
-            </div>
-          </article>
-          <article>
-            <span>✓</span>
-            <div>
-              <h2>Experiência confiável</h2>
-              <p>Informações claras para vendedor e cliente.</p>
-            </div>
-          </article>
+      <section class="section resources-band">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Recursos essenciais</p>
+            <h2>Ferramentas para cuidar da campanha antes, durante e depois da venda.</h2>
+          </div>
+
+          <div class="cards-grid">
+            <article class="info-card">
+              <span aria-hidden="true">$</span>
+              <h3>Vendas e pagamentos</h3>
+              <p>Veja reservas, pagamentos pendentes e cotas confirmadas em uma vis&atilde;o simples de acompanhar.</p>
+            </article>
+            <article class="info-card">
+              <span aria-hidden="true">#</span>
+              <h3>Cotas numeradas</h3>
+              <p>Organize a disponibilidade das cotas e deixe o cliente escolher com mais seguran&ccedil;a.</p>
+            </article>
+            <article class="info-card">
+              <span aria-hidden="true">*</span>
+              <h3>Campanhas completas</h3>
+              <p>Cadastre pr&ecirc;mio, imagens, descri&ccedil;&atilde;o, valores e detalhes importantes em um fluxo claro.</p>
+            </article>
+            <article class="info-card">
+              <span aria-hidden="true">+</span>
+              <h3>Relacionamento</h3>
+              <p>Consulte participantes e hist&oacute;rico para responder clientes com rapidez e mais contexto.</p>
+            </article>
+            <article class="info-card">
+              <span aria-hidden="true">%</span>
+              <h3>Acompanhamento</h3>
+              <p>Entenda o desempenho de cada campanha e saiba onde focar sua divulga&ccedil;&atilde;o.</p>
+            </article>
+            <article class="info-card">
+              <span aria-hidden="true">OK</span>
+              <h3>Sorteios registrados</h3>
+              <p>Mantenha o resultado e o encerramento da campanha organizados para consulta posterior.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="recursos" class="section container">
-        <div class="section-heading">
-          <span class="eyebrow">Recursos para o dia a dia</span>
-          <h2>Mais controle para você. Mais clareza para seus clientes.</h2>
-          <p>
-            Reunimos as ferramentas essenciais para transformar uma campanha em uma operação bem apresentada e fácil de
-            acompanhar.
-          </p>
-        </div>
-
-        <div class="cards-grid">
-          <article class="info-card">
-            <span>◐</span>
-            <h3>Uma loja com a sua marca</h3>
-            <p>Apresente suas campanhas em uma vitrine própria, com logo, cores e uma experiência consistente.</p>
-          </article>
-          <article class="info-card">
-            <span>★</span>
-            <h3>Campanhas completas</h3>
-            <p>Cadastre prêmio, imagem, descrição, quantidade e valor das cotas em um só fluxo.</p>
-          </article>
-          <article class="info-card">
-            <span>$</span>
-            <h3>Vendas e pagamentos organizados</h3>
-            <p>Acompanhe reservas, pagamentos e cotas confirmadas sem depender de controles espalhados.</p>
-          </article>
-          <article class="info-card">
-            <span>◉</span>
-            <h3>Relacionamento com clientes</h3>
-            <p>Consulte participantes e o histórico de cada campanha para atender com mais clareza.</p>
-          </article>
-          <article class="info-card">
-            <span>◆</span>
-            <h3>Sorteios bem documentados</h3>
-            <p>Organize os sorteios vinculados a cada campanha e mantenha os resultados acessíveis.</p>
-          </article>
-          <article class="info-card">
-            <span>▧</span>
-            <h3>Conteúdo protegido</h3>
-            <p>Disponibilize materiais exclusivos apenas após o pagamento ou somente para o ganhador.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="como-funciona" class="section muted">
+      <section id="como-funciona" class="section steps-section">
         <div class="container">
           <div class="section-heading left">
-            <span class="eyebrow">Como funciona</span>
-            <h2>Um caminho simples para colocar sua campanha no ar.</h2>
-            <p>Você cuida da estratégia e da divulgação. A plataforma ajuda a manter cada etapa organizada.</p>
+            <p class="eyebrow">Como funciona</p>
+            <h2>Da ideia ao sorteio, sem perder o controle da opera&ccedil;&atilde;o.</h2>
           </div>
 
           <div class="steps-grid">
             <article>
-              <strong>01</strong>
+              <span>01</span>
               <h3>Crie sua loja</h3>
-              <p>Cadastre seus dados, escolha o nome da loja e prepare sua identidade.</p>
+              <p>Escolha o nome, prepare sua identidade e deixe sua vitrine pronta para receber clientes.</p>
             </article>
             <article>
-              <strong>02</strong>
-              <h3>Publique uma campanha</h3>
-              <p>Apresente o prêmio, defina cotas, valores e todas as informações importantes.</p>
+              <span>02</span>
+              <h3>Monte a campanha</h3>
+              <p>Publique pr&ecirc;mio, regras, imagens, valor e quantidade de cotas com uma apresenta&ccedil;&atilde;o clara.</p>
             </article>
             <article>
-              <strong>03</strong>
+              <span>03</span>
               <h3>Divulgue e acompanhe</h3>
-              <p>Compartilhe sua loja e acompanhe clientes, reservas e pagamentos pelo painel.</p>
+              <p>Compartilhe o link da loja e acompanhe reservas, pagamentos e participantes pelo painel.</p>
             </article>
             <article>
-              <strong>04</strong>
-              <h3>Realize o sorteio</h3>
-              <p>Registre o resultado e mantenha o encerramento da campanha organizado.</p>
+              <span>04</span>
+              <h3>Finalize com registro</h3>
+              <p>Registre o resultado do sorteio e mantenha o hist&oacute;rico da campanha bem documentado.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="sobre-rifas" class="section container">
-        <div class="about-panel">
-          <div>
-            <span class="eyebrow solid">Sobre rifas</span>
-            <h2>Campanhas envolventes começam com confiança.</h2>
+      <section id="seguranca" class="section trust-section">
+        <div class="container trust-grid">
+          <div class="section-copy">
+            <p class="eyebrow">Confian&ccedil;a vende</p>
+            <h2>Rifas funcionam melhor quando tudo est&aacute; explicado antes da compra.</h2>
             <p>
-              Rifas aproximam pessoas de prêmios desejados por meio da compra de cotas numeradas. Para criar uma boa
-              experiência, é essencial apresentar regras, prêmio, valores e forma de sorteio com transparência.
+              Uma boa campanha mostra o pr&ecirc;mio, o valor, as cotas, o prazo e a forma de sorteio com clareza. O RifaSaas
+              ajuda a apresentar essas informa&ccedil;&otilde;es em uma jornada mais organizada para o cliente.
             </p>
           </div>
+
           <div class="trust-list">
-            <p>✓ Apresente o prêmio e as condições de participação com clareza.</p>
-            <p>✓ Mantenha clientes informados sobre pagamentos, cotas e sorteios.</p>
-            <p>✓ Observe as regras e exigências legais aplicáveis à sua operação.</p>
+            <article>
+              <strong>Regras vis&iacute;veis</strong>
+              <p>Deixe condi&ccedil;&otilde;es, pr&ecirc;mios e forma de participa&ccedil;&atilde;o em uma p&aacute;gina f&aacute;cil de consultar.</p>
+            </article>
+            <article>
+              <strong>Compra mais objetiva</strong>
+              <p>O cliente visualiza cotas, acompanha o pagamento e encontra suas informacoes depois.</p>
+            </article>
+            <article>
+              <strong>Opera&ccedil;&atilde;o documentada</strong>
+              <p>Voc&ecirc; mant&eacute;m campanhas, compradores e sorteios registrados no mesmo ambiente.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="cta-band">
-        <div class="container cta-grid">
-          <div>
-            <p>Sua próxima campanha começa aqui</p>
-            <h2>Profissionalize sua operação e crie uma experiência melhor para seus clientes.</h2>
-          </div>
-          <a class="button secondary" href="/api/entrar?next=/cadastro-vendedor">Criar minha loja →</a>
+        <div class="container cta-inner">
+          <p>Comece com uma loja mais bonita e uma gest&atilde;o mais organizada.</p>
+          <h2>Profissionalize sua pr&oacute;xima rifa com o RifaSaas.</h2>
+          <a class="button secondary" href="/api/entrar?next=/cadastro-vendedor">Criar minha loja</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <a class="brand" href="/">
+        <a class="brand" href="/" aria-label="RifaSaas">
           <img src="logoRifassas.ico" alt="" />
           <span>RifaSaas</span>
         </a>
