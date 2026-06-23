@@ -42,7 +42,7 @@ async function readJson(req) {
   }
 
   if (typeof req.body === "string") {
-    return JSON.parse(req.body);
+    return JSON.parse(req.body.replace(/^\uFEFF/, "").trim());
   }
 
   const chunks = [];
