@@ -50,6 +50,6 @@ async function readJson(req) {
     chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
   }
 
-  const text = Buffer.concat(chunks).toString("utf8").trim();
+  const text = Buffer.concat(chunks).toString("utf8").replace(/^\uFEFF/, "").trim();
   return text ? JSON.parse(text) : {};
 }

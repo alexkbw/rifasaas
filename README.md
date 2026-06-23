@@ -4,7 +4,7 @@ Esta pasta contem uma versao enxuta da landing page do `alexkbw/saas-explorer`, 
 
 ## Rotas
 
-- `/` mostra a landing.
+- `/` mostra a landing em `public/index.html`.
 - `/api/tunnel-update` recebe o link atualizado da VM e salva no Redis/Upstash.
 - `/api/entrar` le o ultimo link salvo e redireciona o usuario para `/login` no tunel Cloudflared.
 
