@@ -1,0 +1,12 @@
+{
+  "name": "rifasaas-vercel-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check api/entrar.js && node --check api/tunnel-update.js && node --check lib/redis.js"
+  },
+  "dependencies": {
+    "@upstash/redis": "^1.35.3"
+  }
+}
